@@ -16,13 +16,13 @@ stdenv.mkDerivation rec {
   src = pkgs.fetchgit {
     url = "https://github.com/C-Caveman/glapp.git";
     #rev = "41473ff9d321ff48f362f9d15c92f9113032c16c";
-    #sha256 = "sha256-u8lEnuxGRb8Rh+IAupzTdTV9PkeOb8VTK/Cu6xa1FG8=";
+    sha256 = "sha256-u8lEnuxGRb8Rh+IAupzTdTV9PkeOb8VTK/Cu6xa1FG8=";
   };
   #sourceRoot = ./.;
   nativeBuildInputs = [ cmake gnumake ];
-  #buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw #];
+  buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw ];
   propagatedBuildInputs = [
-    pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw
+    xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw xorg.libXrandr
   ];
   
 } 
