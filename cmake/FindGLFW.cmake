@@ -171,6 +171,7 @@ else ()
                 "$ENV{GLFW_LOCATION}/lib/x11"
             PATHS
                 /usr/lib64
+                ./8sg60xz58dc4pzvb9x69fjchwwz6iw7i-libXrandr-1.5.2/lib
                 /usr/lib
                 /usr/lib/${CMAKE_LIBRARY_ARCHITECTURE}
                 /usr/local/lib64
