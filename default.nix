@@ -20,6 +20,9 @@ stdenv.mkDerivation rec {
   };
   #sourceRoot = ./.;
   nativeBuildInputs = [ cmake gnumake ];
-  buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw ];
+  #buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw #];
+  propagatedBuildInputs = [
+    pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw
+  ];
   
 } 

@@ -169,9 +169,9 @@ else ()
                 "$ENV{GLFW_LOCATION}/lib"
                 "${GLFW_LOCATION}/lib/x11"
                 "$ENV{GLFW_LOCATION}/lib/x11"
+               # "/nix/store/0airi7ppyn8qrf9xp1m1wx03qq6ragkg-glfw-3.4/lib"
             PATHS
                 /usr/lib64
-                ./8sg60xz58dc4pzvb9x69fjchwwz6iw7i-libXrandr-1.5.2/lib
                 /usr/lib
                 /usr/lib/${CMAKE_LIBRARY_ARCHITECTURE}
                 /usr/local/lib64
