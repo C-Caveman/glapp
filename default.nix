@@ -2,7 +2,7 @@
 
 { stdenv, gcc, cmake,
   xorg,
-  gnumake, pkg-config, autoconf, lib, pkgs
+  gnumake, pkg-config, autoconf, lib, pkgs, glfw
  } :
     let
 
@@ -17,20 +17,10 @@ stdenv.mkDerivation rec {
   src = pkgs.fetchgit {
     url = "https://github.com/C-Caveman/glapp.git";
     #rev = "41473ff9d321ff48f362f9d15c92f9113032c16c";
-    sha256 = "sha256-DhuHvRD/vElJdSEMNwmeckddRsGGY60u0xlsq4oddHE=";
+    #sha256 = "sha256-P2uGK3cbEcNhZ7ArOcbnRgV2n6Uv9bGsUXR0WnJzBb0=";
   };
-  sourceRoot = ./.;
+  #sourceRoot = ./.;
   nativeBuildInputs = [ cmake gnumake ];
-  buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out ];
-  phases = [ "installPhase" "buildPhase" ];
-  installPhase = ''
-    mkdir -p $out/bin
-    #cp bin/ds9 $out/bin/ds9
-  '';
-  buildPhase = ''
-    cmake -S ./. -B $src/build
-    #cd build
-    make
-  '';
- 
+  buildInputs = [ pkg-config gnumake xorg.libX11 xorg.libX11.dev xorg.libX11.dev.out xorg.xrandr glfw ];
+  
 } 

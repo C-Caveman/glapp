@@ -22,7 +22,7 @@ add_executable(${TARGET} ${SOURCES} ${INCLUDES} Config.hpp ${INLINES})
 
 # add GLFW, GLEW, GLM, and OpenGL
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-
+find_package(XRANDR REQUIRED)
 find_package(GLFW REQUIRED)
 include_directories(${GLFW_INCLUDE_DIR})
 target_link_libraries(GLapp ${GLFW_LIBRARIES})
