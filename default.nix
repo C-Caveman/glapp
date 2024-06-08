@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   src = pkgs.fetchgit {
     url = "https://github.com/C-Caveman/glapp.git";
     #rev = "41473ff9d321ff48f362f9d15c92f9113032c16c";
-    sha256 = "sha256-u8lEnuxGRb8Rh+IAupzTdTV9PkeOb8VTK/Cu6xa1FG8=";
+    #sha256 = "sha256-u8lEnuxGRb8Rh+IAupzTdTV9PkeOb8VTK/Cu6xa1FG8=";
   };
   #sourceRoot = ./.;
   nativeBuildInputs = [ cmake gnumake ];
