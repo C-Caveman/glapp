@@ -1,0 +1,3 @@
+/home/leo/code/cpp/cg23/GLapp/build/CMakeFiles/GLapp.dir
+/home/leo/code/cpp/cg23/GLapp/build/CMakeFiles/edit_cache.dir
+/home/leo/code/cpp/cg23/GLapp/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Asteroid	src/Asteroid.cpp	/^Asteroid::Asteroid(int w, int h, vec3 size, const char *texturePPM) :$/;"	f	class:Asteroid
+Asteroid	src/Asteroid.hpp	/^class Asteroid : public Object {$/;"	c
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/leo\/code\/cpp\/cg23\/GLapp\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/leo\/code\/cpp\/cg23\/GLapp$/;"	m
+COLOR_TEXTURE	src/Object.hpp	/^    enum {COLOR_TEXTURE, NUM_TEXTURES};$/;"	e	enum:Object::__anon1
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+F_PI	src/Asteroid.cpp	14;"	d	file:
+F_PI	src/GLapp.cpp	17;"	d	file:
+F_PI	src/Sphere.cpp	14;"	d	file:
+GLapp	src/GLapp.cpp	/^GLapp::GLapp()$/;"	f	class:GLapp
+GLapp	src/GLapp.hpp	/^class GLapp {$/;"	c
+Hash3	src/Noise.cpp	/^uvec3 Noise::Hash3(uvec3 v) $/;"	f	class:Noise
+INDEX_BUFFER	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+LightDir	src/GLapp.hpp	/^        glm::vec3 LightDir;                      \/\/ light direction$/;"	m	struct:GLapp::SceneData
+ModelFromWorld	src/Object.hpp	/^        glm::mat4 WorldFromModel, ModelFromWorld;$/;"	m	struct:Object::ObjectShaderData
+NORMAL_BUFFER	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+NUM_BUFFERS	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+NUM_TEXTURES	src/Object.hpp	/^    enum {COLOR_TEXTURE, NUM_TEXTURES};$/;"	e	enum:Object::__anon1
+Noise	src/Noise.hpp	/^namespace Noise {$/;"	n
+Noise1	src/Noise.cpp	/^float Noise::Noise1(vec3 v)$/;"	f	class:Noise
+Noise3	src/Noise.cpp	/^vec3 Noise::Noise3(vec3 v)$/;"	f	class:Noise
+OBJECT_UNIFORM_BUFFER	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+Object	src/Object.cpp	/^Object::Object(const char *texturePPM)$/;"	f	class:Object
+Object	src/Object.hpp	/^class Object {$/;"	c
+ObjectShaderData	src/Object.hpp	/^    struct ObjectShaderData {$/;"	s	class:Object
+POSITION_BUFFER	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+PROJECT_BASE_DIR	build/Config.hpp	4;"	d
+PROJECT_DATA_DIR	build/Config.hpp	5;"	d
+Plane	src/Plane.cpp	/^Plane::Plane(vec3 size, const char *texturePPM) :$/;"	f	class:Plane
+Plane	src/Plane.hpp	/^class Plane : public Object {$/;"	c
+ProjFromWorld	src/GLapp.hpp	/^        glm::mat4 ProjFromWorld, WorldFromProj;  \/\/ viewing matrix & inverse$/;"	m	struct:GLapp::SceneData
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SceneData	src/GLapp.hpp	/^    struct SceneData {$/;"	s	class:GLapp
+ShaderInfo	src/Shader.hpp	/^struct ShaderInfo {$/;"	s
+Sphere	src/Sphere.cpp	/^Sphere::Sphere(int w, int h, vec3 size, const char *texturePPM) :$/;"	f	class:Sphere
+Sphere	src/Sphere.hpp	/^class Sphere : public Object {$/;"	c
+UV_BUFFER	src/Object.hpp	/^    enum {OBJECT_UNIFORM_BUFFER, POSITION_BUFFER, NORMAL_BUFFER, UV_BUFFER, INDEX_BUFFER, NUM_BUFFERS};$/;"	e	enum:Object::__anon2
+WorldFromModel	src/Object.hpp	/^        glm::mat4 WorldFromModel, ModelFromWorld;$/;"	m	struct:Object::ObjectShaderData
+WorldFromProj	src/GLapp.hpp	/^        glm::mat4 ProjFromWorld, WorldFromProj;  \/\/ viewing matrix & inverse$/;"	m	struct:GLapp::SceneData
+active	src/GLapp.hpp	/^    bool active;                \/\/ clicked into window$/;"	m	class:GLapp
+bufferIDs	src/Object.hpp	/^    unsigned int bufferIDs[NUM_BUFFERS];$/;"	m	class:Object
+distance	src/GLapp.hpp	/^    float distance;             \/\/ distance from 0,0,0$/;"	m	class:GLapp
+draw	src/Object.cpp	/^void Object::draw(GLapp* app, double now)$/;"	f	class:Object
+error	src/GLapp.cpp	/^    void error(int error, const char *description) {$/;"	f
+file	src/Shader.hpp	/^    const char *file;           \/\/ file to load into this object$/;"	m	struct:ShaderInfo
+height	src/GLapp.hpp	/^    int width, height;          \/\/ current window dimensions$/;"	m	class:GLapp
+id	src/Shader.hpp	/^    unsigned int id;            \/\/ shader object ID$/;"	m	struct:ShaderInfo
+indices	src/Object.hpp	/^    std::vector<unsigned int> indices;  \/\/   3 vertex indices per triangle$/;"	m	class:Object
+initGPUData	src/Object.cpp	/^void Object::initGPUData() $/;"	f	class:Object
+keyPress	src/GLapp.cpp	/^    void keyPress(GLFWwindow *win, int key, int scancode, int action, int mods) {$/;"	f
+loadPPM	src/Object.cpp	/^void Object::loadPPM(const char *imagefile, unsigned int bufferID)$/;"	f	class:Object
+loadShader	src/Shader.cpp	/^bool loadShader(unsigned int id, const char *file)$/;"	f
+loadShaders	src/Shader.cpp	/^bool loadShaders(unsigned int progID, vector<ShaderInfo> &components)$/;"	f
+main	src/GLapp.cpp	/^int main(int argc, char *argv[])$/;"	f
+mouseMove	src/GLapp.cpp	/^    void mouseMove(GLFWwindow *win, double x, double y) {$/;"	f
+mousePress	src/GLapp.cpp	/^    void mousePress(GLFWwindow *win, int button, int action, int mods) {$/;"	f
+mouseX	src/GLapp.hpp	/^    double mouseX, mouseY;      \/\/ location of mouse at last event$/;"	m	class:GLapp
+mouseY	src/GLapp.hpp	/^    double mouseX, mouseY;      \/\/ location of mouse at last event$/;"	m	class:GLapp
+norm	src/Object.hpp	/^    std::vector<glm::vec3> norm;        \/\/   per-vertex normal$/;"	m	class:Object
+objectShaderData	src/Object.hpp	/^    } objectShaderData;$/;"	m	class:Object	typeref:struct:Object::ObjectShaderData
+objects	src/GLapp.hpp	/^    std::vector<class Object*> objects;$/;"	m	class:GLapp
+override	src/Asteroid.hpp	/^    virtual void setRenderState(GLapp *app, double now) override;$/;"	m	class:Asteroid
+override	src/Sphere.hpp	/^    virtual void setRenderState(GLapp *app, double now) override;$/;"	m	class:Sphere
+pad0	src/GLapp.hpp	/^        float pad0;                              \/\/ padding to fill a vec4$/;"	m	struct:GLapp::SceneData
+pan	src/GLapp.hpp	/^    float pan, tilt;            \/\/ horizontal and vertical Euler angles$/;"	m	class:GLapp
+panRate	src/GLapp.hpp	/^    float panRate, tiltRate;    \/\/ keyboard orbiting rate in radians\/sec$/;"	m	class:GLapp
+prevTime	src/GLapp.hpp	/^    double prevTime;$/;"	m	class:GLapp
+render	src/GLapp.cpp	/^void GLapp::render()$/;"	f	class:GLapp
+reshape	src/GLapp.cpp	/^    void reshape(GLFWwindow *win, int width, int height) {$/;"	f
+scene	src/GLapp.hpp	/^    } scene;$/;"	m	class:GLapp	typeref:struct:GLapp::SceneData
+sceneUniformsID	src/GLapp.hpp	/^    unsigned int sceneUniformsID;$/;"	m	class:GLapp
+sceneUpdate	src/GLapp.cpp	/^void GLapp::sceneUpdate(double dTime)$/;"	f	class:GLapp
+setRenderState	src/Asteroid.cpp	/^void Asteroid::setRenderState(GLapp *app, double now)$/;"	f	class:Asteroid
+setRenderState	src/Object.cpp	/^void Object::setRenderState(GLapp* app, double now)$/;"	f	class:Object
+setRenderState	src/Sphere.cpp	/^void Sphere::setRenderState(GLapp *app, double now)$/;"	f	class:Sphere
+shaderID	src/Object.hpp	/^    unsigned int shaderID;      \/\/ ID for shader program$/;"	m	class:Object
+shaderParts	src/Object.hpp	/^    std::vector<ShaderInfo> shaderParts;  \/\/ vertex & fragment shader info$/;"	m	class:Object
+simplexCoords	src/Noise.cpp	/^static mat4x3 simplexCoords(vec3 p) $/;"	f	file:
+smooth	src/Noise.cpp	/^vec4 smooth(mat4x3 f)$/;"	f
+textureIDs	src/Object.hpp	/^    unsigned int textureIDs[NUM_TEXTURES];$/;"	m	class:Object
+tilt	src/GLapp.hpp	/^    float pan, tilt;            \/\/ horizontal and vertical Euler angles$/;"	m	class:GLapp
+tiltRate	src/GLapp.hpp	/^    float panRate, tiltRate;    \/\/ keyboard orbiting rate in radians\/sec$/;"	m	class:GLapp
+updateShaders	src/Object.cpp	/^void Object::updateShaders()$/;"	f	class:Object
+uv	src/Object.hpp	/^    std::vector<glm::vec2> uv;          \/\/   per-vertex texture coordinate$/;"	m	class:Object
+varrayID	src/Object.hpp	/^    unsigned int varrayID;              \/\/ GL vertex array object, containing:$/;"	m	class:Object
+vert	src/Object.hpp	/^    std::vector<glm::vec3> vert;        \/\/   per-vertex position$/;"	m	class:Object
+width	src/GLapp.hpp	/^    int width, height;          \/\/ current window dimensions$/;"	m	class:GLapp
+win	src/GLapp.hpp	/^    struct GLFWwindow *win;      \/\/ graphics window from GLFW system$/;"	m	class:GLapp	typeref:struct:GLapp::GLFWwindow
+wireframe	src/GLapp.hpp	/^    bool wireframe;$/;"	m	class:GLapp
+~GLapp	src/GLapp.cpp	/^GLapp::~GLapp() $/;"	f	class:GLapp
+~Object	src/Object.cpp	/^Object::~Object()$/;"	f	class:Object
