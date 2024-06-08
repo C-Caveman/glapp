@@ -28,8 +28,8 @@ stdenv.mkDerivation rec {
     #cp bin/ds9 $out/bin/ds9
   '';
   buildPhase = ''
-    cmake -S ./. -B ./build
-    cd build
+    cmake -S ./. -B $src/build
+    #cd build
     make
   '';
  
