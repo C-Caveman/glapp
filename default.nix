@@ -13,11 +13,11 @@
     in
 stdenv.mkDerivation rec {
   #version = "9.7.6";
-  name = "cg23";
+  name = "glapp";
   src = pkgs.fetchgit {
-    url = "https://github.com:C-Caveman/cg23";
+    url = "https://github.com/C-Caveman/glapp.git";
     #rev = "41473ff9d321ff48f362f9d15c92f9113032c16c";
-    #sha256 = "";
+    sha256 = "sha256-DhuHvRD/vElJdSEMNwmeckddRsGGY60u0xlsq4oddHE=";
   };
   sourceRoot = ./.;
   nativeBuildInputs = [ cmake gnumake ];
@@ -28,7 +28,6 @@ stdenv.mkDerivation rec {
     #cp bin/ds9 $out/bin/ds9
   '';
   buildPhase = ''
-    cd ./GLapp
     cmake -S ./. -B ./build
     cd build
     make
