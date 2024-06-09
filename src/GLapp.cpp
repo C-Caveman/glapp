@@ -96,16 +96,16 @@ extern "C" {
             switch (key) {
             // Walking controls
             case 'W':                   // move forwards
-                app->move_forward = 1; // wasd movement
+                app->move_forward += 1; // wasd movement
                 return;
             case 'S':                   // move backwards
-                app->move_forward = -1; // wasd movement
+                app->move_forward -= 1; // wasd movement
                 return;
             case 'A':                   // move left
-                app->move_side = -1; // wasd movement
+                app->move_side -= 1; // wasd movement
                 return;
             case 'D':                   // move right
-                app->move_side = 1; // wasd movement
+                app->move_side += 1; // wasd movement
                 return;
             case GLFW_KEY_SPACE:
                 app->move_jump = 1; // jump!
@@ -178,11 +178,17 @@ extern "C" {
         if (action == GLFW_RELEASE) {
             switch (key) {
             // Walking controls
-            case 'A': case 'D':         // stop strafing
-                app->move_side = 0;
+            case 'A':         // stop strafing
+                app->move_side += 1;
                 return;
-            case 'W': case 'S':         // stop walking
-                app->move_forward = 0;
+            case 'D':         // stop strafing
+                app->move_side -= 1;
+                return;
+            case 'W':         // stop walking
+                app->move_forward -= 1;
+                return;
+            case 'S':         // stop walking
+                app->move_forward += 1;
                 return;
                 
             // Camera controls
@@ -288,7 +294,7 @@ void printVec3(vec3 v) { printf("(%.2f, %.2f, %.2f)\n", v.x, v.y, v.z); }
 // call before drawing each frame to update per-frame scene state
 void GLapp::sceneUpdate(double dTime)
 {
-    const float move_speed = 700.f;
+    const float move_speed = 750.f;
     const float gravity_strength = 800;//0.08f * (!DEBUG); // no grav in debug mode
     const float push_strength = 1000;
     const float jump_power = 300.f;
@@ -311,7 +317,7 @@ void GLapp::sceneUpdate(double dTime)
     // collision
     float dist_to_ground = 70.f - glm::length(camera_position) + player_height;
     if (move_jump > 0) {
-        camera_velocity += float(move_jump * jump_power) * vec3{0,0,-1};//up_dir;
+        camera_velocity.z = -float(move_jump * jump_power);
         move_jump = 0;
     }
     // touching the ground (or flying in debug mode)
@@ -321,9 +327,6 @@ void GLapp::sceneUpdate(double dTime)
         
     }
     else if (camera_position.z > -70) {
-        camera_position.z = -70;
-        if (camera_velocity.z > 0)
-            camera_velocity.z = 0;
     }
     else if (camera_position.z < -65) {
         camera_velocity -= gravity_strength * gravity_dir * (float)dTime;
@@ -348,6 +351,9 @@ void GLapp::sceneUpdate(double dTime)
     // double velocity if dashing
     //if (dash_cooldown <= 0)
     //    camera_velocity *= (move_dash*0.25 + 1);
+    if (camera_position.z > -70.0 && camera_velocity.z > 0.0) {
+        camera_velocity.z = 0;
+    }
     camera_position += float(dTime) * camera_velocity;
     // perform camera transformation
     //tilt += acos(gravity_dir.z); // account for changing up_dir

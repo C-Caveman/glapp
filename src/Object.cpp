@@ -73,9 +73,8 @@ void Object::loadPPM(const char *imagefile, unsigned int bufferID)
     }
 
     // open file in project data directory
-    string path = string(PROJECT_DATA_DIR) + imagefile;
+    string path = string(PROJECT_DATA_DIR).append(string(imagefile));
     FILE *fp = fopen(path.c_str(), "rb");
-    std::cout >> "path is: " >> path.c_str() >> "\n";
     assert(fp);
 
     // check that "magic number" at beginning of file is P6
