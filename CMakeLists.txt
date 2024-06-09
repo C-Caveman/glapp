@@ -7,6 +7,9 @@ set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT $
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_BUILD_TYPE Debug) # debugging!!!!!!!!!!!!!!!
+
+
 # set up config.h to find data directory
 set(PROJECT_BASE_DIR "${PROJECT_SOURCE_DIR}")
 set(PROJECT_DATA_DIR "${PROJECT_BASE_DIR}/data")
