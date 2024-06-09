@@ -1,3 +1,6 @@
 result
 *CMakeCache.txt
 *GLapp
+*.cmake
+enemies.txt
+backupDefault.nix

@@ -169,7 +169,6 @@ else ()
                 "$ENV{GLFW_LOCATION}/lib"
                 "${GLFW_LOCATION}/lib/x11"
                 "$ENV{GLFW_LOCATION}/lib/x11"
-               # "/nix/store/0airi7ppyn8qrf9xp1m1wx03qq6ragkg-glfw-3.4/lib"
             PATHS
                 /usr/lib64
                 /usr/lib
